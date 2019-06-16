@@ -1,6 +1,8 @@
 # OneClassGAN
 
-This repo contains code for OneClassGAN(OCGAN) developed by Pramuditha Perera with Ramesh Nallapati and Xiang Bing. To train a OneClass classifier use TrainNovelty.py. TestNovelty.py is used for testing. Basic functionality is as follows:
+This repo contains MXNet code for OneClassGAN(OCGAN) developed by Pramuditha Perera with Ramesh Nallapati and Xiang Bing. To train a OneClass classifier use TrainNovelty.py. TestNovelty.py is used for testing. 
+
+Basic functionality is as follows:
 
 Prior to training include all data in class-specific sub folders as images. 
 For protocol 1, all images of each class should be in a single folder. For example, in MNIST there should be folders called MNIST/0, MNIST/1, MNIST
@@ -8,8 +10,7 @@ For protocol 1, all images of each class should be in a single folder. For examp
 For protocol 2, each class should have two sub-folders training and testing. Eg: MNIST/training/0, MNIST/training/1,…
 And MNIST/testing/0, MNIST/testing/1,…
 
-All data used in experiments can be found in the “noveltybuckety” s3 bucket.
-Datasets used for both protocols has 3 subfolders: training, testing and all, where all contains all images of the given class (which can be used for protocol1).
+atasets used for both protocols has 3 subfolders: training, testing and all, where all contains all images of the given class (which can be used for protocol1).
 
 Include a list of classes in a textfile dataset_folderlist.txt. Eg: for MNIST its MNIST_folderlist.txt
 
