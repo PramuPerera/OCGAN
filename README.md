@@ -1,6 +1,6 @@
 # OneClassGAN
 
-This repo contains code for OneClassGAM(OCGAN) developed by Pramuditha Perera with Ramesh Nallapati and Xiang Bing. To train a OneClass classifier use TrainNovelty.py. TestNovelty.py is used for testing. Basic functionality is as follows:
+This repo contains code for OneClassGAN(OCGAN) developed by Pramuditha Perera with Ramesh Nallapati and Xiang Bing. To train a OneClass classifier use TrainNovelty.py. TestNovelty.py is used for testing. Basic functionality is as follows:
 
 Prior to training include all data in class-specific sub folders as images. 
 For protocol 1, all images of each class should be in a single folder. For example, in MNIST there should be folders called MNIST/0, MNIST/1, MNIST
