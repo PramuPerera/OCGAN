@@ -38,13 +38,13 @@ def loadPaths(opt):
         inclasses = [classes]
     print(inclasses)
     if opt.protocol == 1:
-        # first 50% of each image is treated as training. remainder is treated as testing
+        # first 80% of each image is treated as training. remainder is treated as testing
         for lbl, nclass in enumerate(inclasses):
             dirs = os.listdir(datapath + dataset + '/' + nclass)
-            for nfile in range(int(len(dirs)/2)):
+            for nfile in range(int(len(dirs)*0.8)):
                 inclasspaths.append(datapath + dataset + '/' + nclass + '/' + dirs[nfile])
                 inclasslabels.append(lbl)
-            for nfile in range(int(len(dirs)/2)+1, len(dirs)):
+            for nfile in range(int(len(dirs)*0.8)+1, len(dirs)):
                 testclasspaths.append(datapath + dataset + '/' + nclass + '/' + dirs[nfile])
                 testclasslabels.append(lbl)
         text_file = open(dataset + "_novellist.txt", "r")
